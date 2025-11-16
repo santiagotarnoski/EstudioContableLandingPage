@@ -31,7 +31,7 @@ export default function TestimonialCard({
           <Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />
         ))}
       </div>
-      <p className="text-body mb-6 italic">"{text}"</p>
+      <p className="text-body mb-6 italic">&ldquo;{text}&rdquo;</p>
       <div>
         <p className="font-semibold text-slate-800">{name}</p>
         <p className="text-sm text-slate-600">{business}</p>
