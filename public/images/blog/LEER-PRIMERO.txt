@@ -1,0 +1,17 @@
+📸 IMÁGENES DEL BLOG
+====================
+
+Coloca aquí las imágenes de los posts del blog con estos nombres EXACTOS:
+
+✅ vencimientos-2024.jpg    → Vencimientos Impositivos 2024
+✅ monotributo-2024.jpg     → Nuevas Categorías de Monotributo 2024
+✅ tips-pymes.jpg           → 5 Tips Contables para PyMEs
+✅ planificacion-fiscal.jpg → Planificación Fiscal: Estrategias
+
+📐 Tamaño recomendado: 1200x600px (horizontal)
+📦 Formato: JPG o PNG
+
+⚠️ IMPORTANTE: Los nombres deben coincidir EXACTAMENTE con el ID del post.
+
+Ver guía completa en: /public/images/README.md
+

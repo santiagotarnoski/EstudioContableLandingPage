@@ -1,0 +1,14 @@
+📸 FOTOS DEL EQUIPO
+===================
+
+Coloca aquí las fotos del equipo con estos nombres EXACTOS:
+
+✅ juan-perez.jpg    → Dr. Juan Pérez (Contador Público - Socio Fundador)
+✅ maria-garcia.jpg  → Lic. María García (Contadora Pública - Socia)
+✅ carlos-lopez.jpg  → CPN Carlos López (Contador Público Nacional)
+
+📐 Tamaño recomendado: 400x400px (cuadrado)
+📦 Formato: JPG o PNG
+
+Ver guía completa en: /public/images/README.md
+

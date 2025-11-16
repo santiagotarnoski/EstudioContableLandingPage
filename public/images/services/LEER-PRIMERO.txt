@@ -1,0 +1,15 @@
+📸 IMÁGENES DE SERVICIOS
+=======================
+
+Coloca aquí las imágenes de servicios con estos nombres EXACTOS:
+
+✅ contabilidad.jpg     → Contabilidad General y Balances
+✅ impuestos.jpg        → Liquidación de Impuestos y Sueldos  
+✅ pymes.jpg            → Asesoramiento para PyMEs y Emprendedores
+✅ planificacion.jpg    → Planificación Fiscal
+
+📐 Tamaño recomendado: 1200x800px (horizontal)
+📦 Formato: JPG o PNG
+
+Ver guía completa en: /public/images/README.md
+

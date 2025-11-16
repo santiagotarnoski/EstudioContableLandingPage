@@ -1,0 +1,464 @@
+/* ===================================================
+   ESTILOS ADICIONALES PARA ESTUDIO CONTABLE
+   ===================================================
+   Estilos para secciones específicas: Beneficios, 
+   Testimonios y CTA Final
+*/
+
+/* ===== SECCIÓN BENEFICIOS ===== */
+.benefits-section {
+    padding: 120px 0;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a, #0f0f0f);
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 200, 81, 0.15);
+    border-bottom: 1px solid rgba(0, 200, 81, 0.15);
+}
+
+.benefits-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 50%, rgba(0, 200, 81, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 70% 20%, rgba(0, 212, 255, 0.06) 0%, transparent 50%);
+    pointer-events: none;
+    animation: benefits-bg 15s ease-in-out infinite;
+}
+
+@keyframes benefits-bg {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.1); }
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    position: relative;
+    z-index: 2;
+    margin-top: var(--space-2xl);
+}
+
+.benefit-item {
+    background: linear-gradient(145deg, 
+        rgba(17, 17, 17, 0.8), 
+        rgba(26, 26, 26, 0.6));
+    backdrop-filter: blur(20px);
+    padding: var(--space-xl) var(--space-lg);
+    border-radius: var(--border-radius-large);
+    border: 1px solid rgba(0, 200, 81, 0.2);
+    transition: var(--transition);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-large);
+}
+
+.benefit-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: var(--transition-bounce);
+    transform-origin: left;
+}
+
+.benefit-item:hover::before {
+    transform: scaleX(1);
+}
+
+.benefit-item:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: var(--primary-green);
+    box-shadow: var(--shadow-extra-large);
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--space-md);
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #000000;
+    box-shadow: 0 10px 30px rgba(0, 200, 81, 0.3);
+    transition: var(--transition);
+    position: relative;
+    z-index: 2;
+}
+
+.benefit-item:hover .benefit-icon {
+    transform: scale(1.15) rotate(10deg);
+    box-shadow: 0 15px 40px rgba(0, 200, 81, 0.5);
+}
+
+.benefit-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: var(--space-sm);
+    color: #ffffff;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    position: relative;
+    z-index: 2;
+}
+
+.benefit-item p {
+    color: #d0d0d0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-weight: var(--font-weight-normal);
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== SECCIÓN TESTIMONIOS ===== */
+.testimonials-section {
+    padding: 120px 0;
+    background: #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(0, 200, 81, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+    animation: testimonials-bg 12s ease-in-out infinite;
+}
+
+@keyframes testimonials-bg {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.7; }
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-xl);
+    position: relative;
+    z-index: 2;
+    margin-top: var(--space-2xl);
+}
+
+.testimonial-card {
+    background: linear-gradient(145deg, 
+        rgba(17, 17, 17, 0.8), 
+        rgba(26, 26, 26, 0.6));
+    backdrop-filter: blur(20px);
+    padding: var(--space-xl) var(--space-lg);
+    border-radius: var(--border-radius-large);
+    border: 1px solid rgba(0, 200, 81, 0.2);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-large);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: var(--transition-bounce);
+    transform-origin: left;
+}
+
+.testimonial-card:hover::before {
+    transform: scaleX(1);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    border-color: var(--primary-green);
+    box-shadow: var(--shadow-extra-large);
+}
+
+.testimonial-content {
+    flex: 1;
+    margin-bottom: var(--space-lg);
+}
+
+.testimonial-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: var(--space-md);
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+
+.testimonial-content p {
+    color: #d0d0d0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-weight: var(--font-weight-normal);
+    font-style: italic;
+    letter-spacing: 0.01em;
+    position: relative;
+    padding-left: var(--space-md);
+}
+
+.testimonial-content p::before {
+    content: '"';
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 3rem;
+    color: var(--primary-green);
+    opacity: 0.3;
+    font-family: Georgia, serif;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(0, 200, 81, 0.2);
+}
+
+.author-avatar {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #000000;
+    box-shadow: var(--shadow-primary);
+    flex-shrink: 0;
+}
+
+.author-info h4 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.author-info span {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    font-weight: var(--font-weight-normal);
+}
+
+/* ===== CTA FINAL SECTION ===== */
+.cta-final-section {
+    padding: 120px 0;
+    background: linear-gradient(135deg, #111111, #1a1a1a);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-final-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 40% 40%, rgba(0, 200, 81, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 60% 60%, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    animation: cta-bg 14s ease-in-out infinite;
+}
+
+@keyframes cta-bg {
+    0%, 100% { opacity: 0.4; transform: rotate(0deg) scale(1); }
+    50% { opacity: 0.7; transform: rotate(180deg) scale(1.1); }
+}
+
+.cta-final-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.cta-final-content h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: var(--space-md);
+    color: #ffffff;
+    font-weight: var(--font-weight-black);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    background: linear-gradient(135deg, 
+        #ffffff 0%, 
+        var(--primary-green) 50%, 
+        var(--accent-cyan) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cta-final-content p {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: #d0d0d0;
+    margin-bottom: var(--space-xl);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+}
+
+.btn-cta-large {
+    padding: 22px 48px;
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: var(--shadow-extra-large);
+}
+
+.btn-cta-large:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 
+        var(--shadow-extra-large),
+        0 0 60px rgba(0, 200, 81, 0.5);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .benefits-grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--space-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .benefits-section,
+    .testimonials-section,
+    .cta-final-section {
+        padding: 80px 0;
+    }
+    
+    .benefits-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .benefit-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+    
+    .author-avatar {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .btn-cta-large {
+        padding: 18px 36px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefit-item,
+    .testimonial-card {
+        padding: var(--space-lg);
+    }
+    
+    .benefit-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .benefit-item h3 {
+        font-size: 1.2rem;
+    }
+    
+    .testimonial-content p {
+        font-size: 1rem;
+    }
+    
+    .btn-cta-large {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+    }
+}
+
+/* ===== ANIMACIONES DE ENTRADA ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.benefit-item,
+.testimonial-card {
+    animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.benefit-item:nth-child(1),
+.testimonial-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.benefit-item:nth-child(2),
+.testimonial-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.benefit-item:nth-child(3),
+.testimonial-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.benefit-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.benefit-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.benefit-item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+
+
