@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   title: `${SITE_CONFIG.name} - ${SITE_CONFIG.tagline}`,
   description: 'Servicios contables profesionales: contabilidad general, liquidación de impuestos, asesoramiento para PyMEs y planificación fiscal.',
   keywords: 'estudio contable, contador, impuestos, balances, asesoramiento fiscal, PyMEs',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.ico', type: 'image/x-icon' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({

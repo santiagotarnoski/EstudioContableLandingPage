@@ -1,0 +1,32 @@
+🌐 CÓMO AGREGAR EL FAVICON (Icono en la pestaña del navegador)
+=============================================================
+
+Coloca tu icono con estos nombres EXACTOS en la carpeta /app/:
+
+✅ favicon.ico     → Icono principal (formato ICO tradicional)
+✅ icon.png        → Icono en formato PNG (32x32px o 16x16px)
+✅ apple-icon.png  → Icono para dispositivos Apple (180x180px)
+
+📍 Ubicación del archivo:
+   /app/favicon.ico
+   /app/icon.png
+   /app/apple-icon.png
+
+📐 Tamaños recomendados:
+   - favicon.ico: 16x16px o 32x32px
+   - icon.png: 32x32px
+   - apple-icon.png: 180x180px (para iPhone/iPad)
+
+💡 Next.js detecta automáticamente los archivos:
+   - favicon.ico en /app/ → Se usa automáticamente
+   - icon.png en /app/ → Se usa automáticamente
+   - apple-icon.png → Para dispositivos Apple
+
+⚠️ El favicon aparecerá en:
+   - La pestaña del navegador
+   - Los marcadores/favoritos
+   - Los shortcuts en dispositivos móviles
+
+🎨 Tip: Puedes usar el mismo logo del navbar pero en tamaño pequeño.
+     Convierte tu logo a ICO usando: https://favicon.io/
+

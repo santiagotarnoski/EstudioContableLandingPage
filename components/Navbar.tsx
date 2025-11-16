@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
@@ -59,39 +58,16 @@ export default function Navbar() {
       <div className="container-custom">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
+          <Link href="/" className="flex items-center space-x-2 group">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="relative w-10 h-10 md:w-12 md:h-12 flex-shrink-0 bg-white/10 rounded-lg overflow-hidden"
+              className="text-2xl font-bold text-white font-heading"
             >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Image
-                  src="/logo.png"
-                  alt={`${SITE_CONFIG.name} Logo`}
-                  width={40}
-                  height={40}
-                  className="object-contain w-full h-full p-1.5"
-                  priority
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none'
-                    const fallback = e.currentTarget.parentElement?.querySelector('.logo-fallback') as HTMLElement
-                    if (fallback) fallback.style.display = 'flex'
-                  }}
-                />
-                {/* Fallback: Mostrar iniciales si no hay logo */}
-                <div className="logo-fallback absolute inset-0 hidden items-center justify-center text-white font-bold text-lg md:text-xl">
-                  {SITE_CONFIG.shortName}
-                </div>
-              </div>
+              {SITE_CONFIG.shortName}
             </motion.div>
-            <div className="flex flex-col">
-              <div className="text-xl md:text-2xl font-bold text-white font-heading hidden sm:block">
-                {SITE_CONFIG.shortName}
-              </div>
-              <span className="hidden sm:block text-xs md:text-sm text-purple-100 font-medium">
-                {SITE_CONFIG.name}
-              </span>
-            </div>
+            <span className="hidden sm:block text-sm text-purple-100 font-medium">
+              {SITE_CONFIG.name}
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
