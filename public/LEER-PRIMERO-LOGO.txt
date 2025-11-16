@@ -1,0 +1,23 @@
+📸 CÓMO AGREGAR EL LOGO
+======================
+
+Coloca tu logo con estos nombres EXACTOS en la carpeta /public/:
+
+✅ logo.png     → Logo principal (recomendado: formato PNG con fondo transparente)
+✅ logo.svg     → Logo en formato vectorial (opcional, más pequeño)
+✅ logo.jpg     → Logo en formato JPG (si no tienes PNG)
+
+📐 Tamaño recomendado:
+   - 200x200px (mínimo)
+   - 400x400px (ideal)
+   - Fondo transparente (PNG) para mejor resultado
+
+📍 Ubicación del archivo:
+   /public/logo.png
+
+💡 El logo aparecerá automáticamente en:
+   - Navbar (arriba a la izquierda)
+   - Mobile y Desktop
+
+⚠️ Si no agregas el logo, se mostrará el texto (ECP) como respaldo.
+
